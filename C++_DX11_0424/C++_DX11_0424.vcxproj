@@ -125,12 +125,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="C++_DX11_0424.h" />
+    <ClInclude Include="D3DManager.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Shader.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C++_DX11_0424.cpp" />
+    <ClCompile Include="D3DManager.cpp" />
+    <ClCompile Include="Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="C++_DX11_0424.rc" />
@@ -138,6 +142,9 @@
   <ItemGroup>
     <Image Include="C++_DX11_0424.ico" />
     <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="SpriteShader.hlsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
