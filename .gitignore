@@ -1,41 +1,48 @@
-# Prerequisites
-*.d
+# --- Visual Studio固有のファイル ---
+# ユーザー設定 (.suo, .user, .userosscache, .sln.docstates)
+.vs/
+*.user
+*.suo
+*.sln.docstates
 
-# Compiled Object files
-*.slo
-*.lo
+# ビルド成果物 (Debug, Release, x64, ARMなど)
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+ARM/
+ARM64/
+
+# パッケージ/ライブラリ
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.db
+*.opensdf
+*.sdf
+*.opensdf
+*.vc.db
+*.vc.opendb
+
+# --- C++ 固有のファイル ---
+# オブジェクトファイル、ライブラリ、実行ファイル
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
 *.lib
-
-# Executables
+*.dll
 *.exe
-*.out
-*.app
+*.exp
+*.ilk
+*.pdb
+*.tlog
 
-# debug information files
-*.dwo
+# CMake設定 (CMakeを使用する場合)
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
